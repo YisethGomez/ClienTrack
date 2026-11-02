@@ -2,7 +2,7 @@
 
 ClienTrack es una aplicación Android para llevar el control de clientes y de los casos que surgen con cada uno: solicitudes, quejas o pendientes que hay que resolver antes de una fecha. La idea es tener un CRM sencillo en el celular, pensado para emprendedores o vendedores independientes que hoy manejan todo de memoria o en notas sueltas.
 
-## Qué hace la aplicación
+## ¿Qué hace la aplicación?
 
 La app abre con una pantalla de bienvenida que explica cómo usarla. Desde ahí el usuario crea una cuenta o inicia sesión, y la sesión queda guardada.
 
@@ -28,7 +28,7 @@ El proyecto está hecho en Java con Android Studio y usa SQLite como base de dat
 
 Todas son versiones estables.
 
-## Cómo ejecutar el proyecto
+## ¿Cómo ejecutar el proyecto?
 
 1. Descargar o clonar el repositorio y abrir la carpeta `ClienTrack` desde Android Studio con *File → Open*.
 2. Esperar a que termine la sincronización de Gradle. La primera vez descarga las dependencias y puede tardar varios minutos.
