@@ -58,8 +58,6 @@ La base de datos se llama `clientrack.db` y se crea en el dispositivo la primera
 
 El proyecto incluye pruebas unitarias en `app/src/test` (validaciones, formatos de fecha y la regla de casos vencidos) y pruebas de interfaz en `app/src/androidTest` (registro, inicio de sesión y el flujo de crear, cerrar y eliminar un caso). Se pueden ejecutar desde Android Studio con clic derecho sobre la carpeta y *Run Tests*. Las de interfaz necesitan un emulador abierto o un celular conectado.
 
-También se puede usar `probar.bat` en Windows o `probar.sh` en macOS y Linux. Revisa el entorno, compila el APK, corre las pruebas y lint, y muestra un resumen al final.
-
 ## Autor(a)
 
 Yiseth Karina Gomez Hernandez  
