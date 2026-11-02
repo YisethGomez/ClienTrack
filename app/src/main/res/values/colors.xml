@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Paleta de ClienTrack. Estilo minimalista: tinta oscura, grises neutros y un solo acento.
-     Todos los pares texto/fondo cumplen contraste WCAG AA (4.5:1 o más). -->
+<!-- Colores de ClienTrack: azul oscuro como color principal y grises -->
 <resources>
-    <!-- Acento único -->
+    <!-- Color principal -->
     <color name="primary">#1E3A8A</color>
     <color name="primary_container">#EEF2FF</color>
 

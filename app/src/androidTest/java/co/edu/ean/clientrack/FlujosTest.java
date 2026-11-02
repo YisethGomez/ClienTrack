@@ -28,11 +28,8 @@ import co.edu.ean.clientrack.ui.RegisterActivity;
 import co.edu.ean.clientrack.ui.WelcomeActivity;
 import co.edu.ean.clientrack.util.SessionManager;
 
-/**
- * Pruebas de interfaz de punta a punta. Se ejecutan en un emulador o celular con:
- *   gradlew connectedDebugAndroidTest   (o con probar.bat, opción 2)
- * Cada prueba crea un usuario nuevo con un correo único, así no depende de datos previos.
- */
+// Pruebas de interfaz. Necesitan un emulador abierto o un celular conectado.
+// Cada prueba crea un usuario nuevo con un correo distinto para no depender de datos anteriores.
 @RunWith(AndroidJUnit4.class)
 public class FlujosTest {
 

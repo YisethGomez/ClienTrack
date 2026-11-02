@@ -3,7 +3,7 @@
      Tipografía: Inter en tres pesos. 400 = cuerpo, 500 = énfasis, 600 = títulos. -->
 <resources>
 
-    <!-- ===================== Textos de pantalla ===================== -->
+    <!-- Textos de pantalla -->
 
     <style name="Text.ClienTrack" parent="">
         <item name="android:fontFamily">@font/inter_regular</item>
@@ -203,7 +203,7 @@
         <item name="android:ellipsize">end</item>
     </style>
 
-    <!-- ===================== Componentes ===================== -->
+    <!-- Componentes -->
 
     <!-- Botón principal (relleno, acento) -->
     <style name="Widget.ClienTrack.Button" parent="Widget.Material3.Button">
@@ -371,7 +371,7 @@
         <item name="android:background">@color/line</item>
     </style>
 
-    <!-- ===================== Apariencias de texto (para componentes de Material) ===================== -->
+    <!-- Apariencias de texto (para componentes de Material) -->
 
     <style name="TextAppearance.ClienTrack.ToolbarTitle" parent="TextAppearance.Material3.TitleLarge">
         <item name="android:fontFamily">@font/inter_semibold</item>
