@@ -10,8 +10,8 @@ android {
         applicationId "co.edu.ean.clientrack"
         minSdk 26
         targetSdk 34
-        versionCode 2
-        versionName "2.0"
+        versionCode 1
+        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -33,14 +33,6 @@ android {
         animationsDisabled true
     }
 
-    lint {
-        // El reporte queda en app/build/reports/lint-results-debug.html
-        abortOnError true
-        checkReleaseBuilds false
-        htmlReport true
-        // Avisos de estilo que no son errores en un proyecto académico
-        disable 'GradleDependency', 'NewerVersionAvailable', 'AndroidGradlePluginVersion', 'MonochromeLauncherIcon'
-    }
 }
 
 dependencies {

@@ -30,7 +30,7 @@ Todas son versiones estables.
 
 ## ¿Cómo ejecutar el proyecto?
 
-1. Descargar o clonar el repositorio y abrir la carpeta `ClienTrack` desde Android Studio con *File → Open*.
+1. Clonar el repositorio con `git clone https://github.com/YisethGomez/ClienTrack.git` (o descargarlo como ZIP desde el botón **Code → Download ZIP**) y abrir la carpeta `ClienTrack` desde Android Studio con *File → Open*.
 2. Esperar a que termine la sincronización de Gradle. La primera vez descarga las dependencias y puede tardar varios minutos.
 3. Si Android Studio muestra el aviso *"Please Select Gradle JVM"*, elegir **Use JVM 21**. Las versiones recientes de Android Studio traen Java 25 y Gradle 8.7 solo es compatible hasta Java 21. También se puede cambiar en *Settings → Build, Execution, Deployment → Build Tools → Gradle → Gradle JDK*.
 4. Si aparece la sugerencia de actualizar el Android Gradle Plugin, se puede ignorar.
