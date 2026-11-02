@@ -42,9 +42,9 @@ Todas son versiones estables.
 
 ## ¿Cómo ejecutar el proyecto?
 
-1. Clonar el repositorio con `git clone https://github.com/YisethGomez/ClienTrack.git` (o descargarlo como ZIP desde el botón **Code → Download ZIP**) y abrir la carpeta `ClienTrack` desde Android Studio con *File → Open*.
+1. Clonar el repositorio con `git clone https://github.com/YisethGomez/ClienTrack.git` (o descargarlo como ZIP desde el botón Code > Download ZIP) y abrir la carpeta ClienTrack desde Android Studio con File > Open.
 2. Esperar a que termine la sincronización de Gradle. La primera vez descarga las dependencias y puede tardar varios minutos.
-3. Si Android Studio muestra el aviso *"Please Select Gradle JVM"*, elegir **Use JVM 21**. Las versiones recientes de Android Studio traen Java 25 y Gradle 8.7 solo es compatible hasta Java 21. También se puede cambiar en *Settings → Build, Execution, Deployment → Build Tools → Gradle → Gradle JDK*.
+3. Si Android Studio muestra el aviso "Please Select Gradle JVM", elegir Use JVM 21. Las versiones recientes de Android Studio traen Java 25 y Gradle 8.7 solo es compatible hasta Java 21. También se puede cambiar en Settings > Build, Execution, Deployment > Build Tools > Gradle > Gradle JDK.
 4. Si aparece la sugerencia de actualizar el Android Gradle Plugin, se puede ignorar.
 5. Seleccionar un emulador o un celular conectado por USB (con la depuración USB activada) y presionar Run.
 
@@ -54,25 +54,25 @@ Para probarla por primera vez: crear una cuenta, iniciar sesión, agregar un cli
 
 El código está dividido por responsabilidades dentro de `app/src/main/java/co/edu/ean/clientrack`:
 
-- `ui`: las pantallas de la aplicación.
-- `adapter`: los adaptadores que muestran las listas de casos y clientes.
-- `model`: las clases Usuario, Cliente y Caso.
-- `data`: `DatabaseHelper`, donde se crean las tablas y están todas las consultas a SQLite.
-- `util`: manejo de la sesión, validaciones y utilidades para fechas y colores.
+- ui: las pantallas de la aplicación.
+- adapter: los adaptadores que muestran las listas de casos y clientes.
+- model: las clases Usuario, Cliente y Caso.
+- data: la clase DatabaseHelper, donde se crean las tablas y están todas las consultas a SQLite.
+- util: manejo de la sesión, validaciones y utilidades para fechas y colores.
 
-El diseño de las pantallas está en `res/layout`, los colores, estilos y textos en `res/values` y la tipografía en `res/font`.
+El diseño de las pantallas está en res/layout, los colores, estilos y textos en res/values y la tipografía en res/font.
 
 ## Base de datos
 
-La base de datos se llama `clientrack.db` y se crea en el dispositivo la primera vez que se abre la app. Tiene tres tablas: `usuarios`, `clientes` y `casos`. Un usuario tiene muchos clientes y cada cliente puede tener muchos casos.
+La base de datos se llama clientrack.db y se crea en el dispositivo la primera vez que se abre la app. Tiene tres tablas: usuarios, clientes y casos. Un usuario tiene muchos clientes y cada cliente puede tener muchos casos.
 
 <img src="capturas/modelo_datos.png" alt="Modelo de datos" width="650">
 
-El detalle de las tablas, sus relaciones y la lógica de la aplicación está en el archivo `DOCUMENTACION_TECNICA.pdf`.
+El detalle de las tablas, sus relaciones y la lógica de la aplicación está en el archivo DOCUMENTACION_TECNICA.pdf.
 
 ## Pruebas
 
-El proyecto incluye pruebas unitarias en `app/src/test` (validaciones, formatos de fecha y la regla de casos vencidos) y pruebas de interfaz en `app/src/androidTest` (registro, inicio de sesión y el flujo de crear, cerrar y eliminar un caso). Se pueden ejecutar desde Android Studio con clic derecho sobre la carpeta y *Run Tests*. Las de interfaz necesitan un emulador abierto o un celular conectado.
+El proyecto incluye pruebas unitarias en `app/src/test` (validaciones, formatos de fecha y la regla de casos vencidos) y pruebas de interfaz en `app/src/androidTest` (registro, inicio de sesión y el flujo de crear, cerrar y eliminar un caso). Se pueden ejecutar desde Android Studio con clic derecho sobre la carpeta y Run Tests. Las de interfaz necesitan un emulador abierto o un celular conectado.
 
 ## Autor(a)
 
