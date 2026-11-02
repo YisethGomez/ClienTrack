@@ -1,3 +1,5 @@
+<img src="capturas/logo.png" alt="Logo de ClienTrack" width="80">
+
 # ClienTrack
 
 ClienTrack es una aplicación Android para llevar el control de clientes y de los casos que surgen con cada uno: solicitudes, quejas o pendientes que hay que resolver antes de una fecha. La idea es tener un CRM sencillo en el celular, pensado para emprendedores o vendedores independientes que hoy manejan todo de memoria o en notas sueltas.
@@ -9,6 +11,16 @@ La app abre con una pantalla de bienvenida que explica cómo usarla. Desde ahí 
 Adentro puede registrar clientes y crearles casos con asunto, prioridad, estado y fecha límite. La pantalla principal muestra los casos ordenados por prioridad, un resumen por estado con los vencidos, una barra de búsqueda y filtros. Cada caso y cada cliente se puede editar o eliminar, y los casos también se pueden marcar como cerrados.
 
 Los formularios validan los datos antes de guardar, las contraseñas se almacenan cifradas con SHA-256 y cada usuario solo ve su propia información.
+
+## Capturas
+
+| Bienvenida | Registro | Mis casos |
+|:---:|:---:|:---:|
+| <img src="capturas/bienvenida.png" width="220"> | <img src="capturas/registro.png" width="220"> | <img src="capturas/mis_casos.png" width="220"> |
+
+| Nuevo caso | Detalle del caso | Clientes |
+|:---:|:---:|:---:|
+| <img src="capturas/nuevo_caso.png" width="220"> | <img src="capturas/detalle_caso.png" width="220"> | <img src="capturas/clientes.png" width="220"> |
 
 ## Tecnologías y versiones
 
@@ -52,7 +64,11 @@ El diseño de las pantallas está en `res/layout`, los colores, estilos y textos
 
 ## Base de datos
 
-La base de datos se llama `clientrack.db` y se crea en el dispositivo la primera vez que se abre la app. Tiene tres tablas: `usuarios`, `clientes` y `casos`. Un usuario tiene muchos clientes y cada cliente puede tener muchos casos. El detalle de las tablas, sus relaciones y la lógica de la aplicación está en el archivo `DOCUMENTACION_TECNICA.pdf`.
+La base de datos se llama `clientrack.db` y se crea en el dispositivo la primera vez que se abre la app. Tiene tres tablas: `usuarios`, `clientes` y `casos`. Un usuario tiene muchos clientes y cada cliente puede tener muchos casos.
+
+<img src="capturas/modelo_datos.png" alt="Modelo de datos" width="650">
+
+El detalle de las tablas, sus relaciones y la lógica de la aplicación está en el archivo `DOCUMENTACION_TECNICA.pdf`.
 
 ## Pruebas
 
