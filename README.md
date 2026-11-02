@@ -52,7 +52,7 @@ El diseño de las pantallas está en `res/layout`, los colores, estilos y textos
 
 ## Base de datos
 
-La base de datos se llama `clientrack.db` y se crea en el dispositivo la primera vez que se abre la app. Tiene tres tablas: `usuarios`, `clientes` y `casos`. Un usuario tiene muchos clientes y cada cliente puede tener muchos casos. El detalle de las tablas, sus relaciones y la lógica de la aplicación está en el archivo `DOCUMENTACION_TECNICA`.
+La base de datos se llama `clientrack.db` y se crea en el dispositivo la primera vez que se abre la app. Tiene tres tablas: `usuarios`, `clientes` y `casos`. Un usuario tiene muchos clientes y cada cliente puede tener muchos casos. El detalle de las tablas, sus relaciones y la lógica de la aplicación está en el archivo `DOCUMENTACION_TECNICA.pdf`.
 
 ## Pruebas
 
