@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="es">
+    <string name="app_name">ClienTrack</string>
+    <string name="cero">0</string>
+    <string name="cd_volver">Volver</string>
+    <string name="cd_logo">Logotipo de ClienTrack</string>
+
+    <!-- Bienvenida -->
+    <string name="welcome_title">Tus clientes y sus pendientes, en un solo lugar.</string>
+    <string name="welcome_intro">Registra clientes, crea casos con prioridad y fecha límite, y revisa lo que está por vencer.</string>
+    <string name="welcome_n1">01</string>
+    <string name="welcome_n2">02</string>
+    <string name="welcome_n3">03</string>
+    <string name="welcome_n4">04</string>
+    <string name="welcome_step1">Crea tu cuenta con nombre, correo y contraseña.</string>
+    <string name="welcome_step2">Agrega a tus clientes desde el ícono de personas.</string>
+    <string name="welcome_step3">Crea un caso: cliente, asunto, prioridad, estado y fecha límite.</string>
+    <string name="welcome_step4">Busca, filtra y toca un caso para verlo, editarlo o cerrarlo.</string>
+    <string name="welcome_start">Comenzar</string>
+    <string name="welcome_continue">Continuar</string>
+
+    <!-- Login -->
+    <string name="login_title">Iniciar sesión</string>
+    <string name="login_subtitle">Ingresa con tu correo y contraseña.</string>
+    <string name="label_email">Correo electrónico</string>
+    <string name="label_password">Contraseña</string>
+    <string name="hint_email">nombre@empresa.com</string>
+    <string name="login_button">Ingresar</string>
+    <string name="login_no_account">¿No tienes cuenta? <font color="#1E3A8A">Regístrate</font></string>
+
+    <!-- Registro -->
+    <string name="register_title">Crear cuenta</string>
+    <string name="register_subtitle">Completa tus datos para empezar.</string>
+    <string name="label_name">Nombre completo</string>
+    <string name="hint_name">María Fernanda López</string>
+    <string name="hint_password_min">Mínimo 6 caracteres</string>
+    <string name="label_password_confirm">Confirmar contraseña</string>
+    <string name="hint_password_confirm">Repite la contraseña</string>
+    <string name="register_button">Crear cuenta</string>
+    <string name="register_have_account">¿Ya tienes cuenta? <font color="#1E3A8A">Inicia sesión</font></string>
+
+    <!-- Principal -->
+    <string name="main_title">Mis casos</string>
+    <string name="saludo">Hola, %1$s</string>
+    <string name="stat_open">Abiertos</string>
+    <string name="stat_progress">En proceso</string>
+    <string name="stat_closed">Cerrados</string>
+    <string name="stat_overdue">Vencidos</string>
+    <string name="badge_overdue">Vencido</string>
+    <string name="hint_search">Buscar asunto, cliente o empresa</string>
+    <string name="filter_all">Todos</string>
+    <string name="filter_open">Abiertos</string>
+    <string name="filter_progress">En proceso</string>
+    <string name="filter_closed">Cerrados</string>
+    <string name="empty_cases_title">Aún no tienes casos</string>
+    <string name="empty_cases_text">Crea el primero con el botón Nuevo caso.</string>
+    <string name="empty_search_title">Sin resultados</string>
+    <string name="empty_search_text">Prueba con otra búsqueda o con otro filtro.</string>
+    <string name="menu_clients">Clientes</string>
+    <string name="menu_logout">Cerrar sesión</string>
+    <string name="new_case">Nuevo caso</string>
+    <string name="cliente_y_empresa">%1$s · %2$s</string>
+    <string name="prioridad_alta">Alta</string>
+    <string name="prioridad_media">Media</string>
+    <string name="prioridad_baja">Baja</string>
+    <string name="prioridad_larga">Prioridad %1$s</string>
+    <string name="estado_abierto">Abierto</string>
+    <string name="estado_proceso">En proceso</string>
+    <string name="estado_cerrado">Cerrado</string>
+
+    <!-- Formulario de caso -->
+    <string name="edit_case">Editar caso</string>
+    <string name="label_client">Cliente</string>
+    <string name="label_subject">Asunto</string>
+    <string name="hint_subject">Ej.: Garantía de compresor dañado</string>
+    <string name="label_description">Descripción</string>
+    <string name="label_optional">Opcional</string>
+    <string name="hint_description">Qué pidió el cliente, qué se acordó, qué falta</string>
+    <string name="label_priority">Prioridad</string>
+    <string name="label_status">Estado</string>
+    <string name="label_due_date">Fecha límite</string>
+    <string name="hint_due_date">Selecciona una fecha</string>
+    <string name="save_case">Guardar caso</string>
+    <string name="save_changes">Guardar cambios</string>
+    <string name="date_picker_title">Fecha límite</string>
+    <string name="date_picker_ok">Aceptar</string>
+
+    <!-- Detalle -->
+    <string name="label_created">Creado</string>
+    <string name="section_client">Cliente</string>
+    <string name="label_company">Empresa</string>
+    <string name="label_email_short">Correo</string>
+    <string name="label_phone">Teléfono</string>
+    <string name="close_case">Marcar como cerrado</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Eliminar</string>
+    <string name="delete_case">Eliminar caso</string>
+    <string name="sin_descripcion">Sin descripción</string>
+    <string name="no_registrado">No registrado</string>
+
+    <!-- Clientes -->
+    <string name="clients_title">Clientes</string>
+    <string name="hint_search_clients">Buscar cliente o empresa</string>
+    <string name="empty_clients_title">Aún no tienes clientes</string>
+    <string name="empty_clients_text">Agrega el primero con el botón Nuevo cliente.</string>
+    <string name="new_client">Nuevo cliente</string>
+    <string name="edit_client">Editar cliente</string>
+    <string name="label_client_name">Nombre</string>
+    <string name="hint_client_name">Andrés Peña</string>
+    <string name="hint_company">Frío Norte</string>
+    <string name="hint_client_email">andres@empresa.com</string>
+    <string name="hint_phone">3001234567</string>
+    <string name="cancel">Cancelar</string>
+    <string name="cerrar">Cerrar</string>
+    <string name="save">Guardar</string>
+    <string name="delete_client">Eliminar cliente</string>
+    <string name="delete_client_con_casos">Eliminar cliente y sus casos</string>
+    <string name="sin_empresa">Sin empresa</string>
+
+    <plurals name="total_casos">
+        <item quantity="one">%d caso</item>
+        <item quantity="many">%d casos</item>
+        <item quantity="other">%d casos</item>
+    </plurals>
+    <plurals name="total_clientes">
+        <item quantity="one">%d cliente</item>
+        <item quantity="many">%d clientes</item>
+        <item quantity="other">%d clientes</item>
+    </plurals>
+    <string name="sin_casos">Sin casos</string>
+
+    <!-- Mensajes de validación -->
+    <string name="err_email_vacio">Ingresa tu correo.</string>
+    <string name="err_email_formato">El correo no tiene un formato válido.</string>
+    <string name="err_email_existe">Este correo ya está registrado.</string>
+    <string name="err_password_vacio">Ingresa tu contraseña.</string>
+    <string name="err_password_min">La contraseña debe tener mínimo %1$d caracteres.</string>
+    <string name="err_password_no_coincide">Las contraseñas no coinciden.</string>
+    <string name="err_credenciales">Correo o contraseña incorrectos.</string>
+    <string name="err_nombre_vacio">Ingresa tu nombre.</string>
+    <string name="err_nombre_formato">Usa solo letras (mínimo 3).</string>
+    <string name="err_cliente_nombre">Escribe un nombre válido: solo letras, mínimo 3.</string>
+    <string name="err_telefono">Solo números, entre 7 y 10 dígitos.</string>
+    <string name="err_asunto_vacio">El asunto es obligatorio.</string>
+    <string name="err_asunto_corto">Escribe un asunto de al menos 3 caracteres.</string>
+    <string name="err_fecha">Selecciona la fecha límite.</string>
+
+    <!-- Mensajes de resultado -->
+    <string name="msg_cuenta_creada">Cuenta creada. Ahora inicia sesión.</string>
+    <string name="msg_cuenta_error">No se pudo crear la cuenta. Intenta de nuevo.</string>
+    <string name="msg_caso_creado">Caso creado</string>
+    <string name="msg_caso_actualizado">Caso actualizado</string>
+    <string name="msg_caso_cerrado">Caso cerrado</string>
+    <string name="msg_caso_eliminado">Caso eliminado</string>
+    <string name="msg_caso_no_existe">El caso ya no existe</string>
+    <string name="msg_caso_error">No se pudo guardar el caso</string>
+    <string name="msg_cliente_agregado">Cliente agregado</string>
+    <string name="msg_cliente_actualizado">Cliente actualizado</string>
+    <string name="msg_cliente_eliminado">Cliente eliminado</string>
+    <string name="msg_cliente_error">No se pudo guardar el cliente</string>
+    <string name="msg_sin_app">No hay una aplicación para abrir esto</string>
+    <string name="msg_primero_cliente">Primero agrega un cliente</string>
+
+    <!-- Diálogos -->
+    <string name="dlg_primer_cliente_titulo">Primero agrega un cliente</string>
+    <string name="dlg_primer_cliente_texto">Cada caso pertenece a un cliente. Agrega tu primer cliente para poder crear casos.</string>
+    <string name="dlg_agregar_cliente">Agregar cliente</string>
+    <string name="dlg_logout_texto">¿Seguro que quieres cerrar sesión?</string>
+    <string name="dlg_eliminar_caso_titulo">¿Eliminar este caso?</string>
+    <string name="dlg_no_deshacer">Esta acción no se puede deshacer.</string>
+    <string name="dlg_eliminar_cliente_titulo">¿Eliminar a %1$s?</string>
+    <plurals name="dlg_eliminar_cliente_casos">
+        <item quantity="one">También se eliminará su caso. Esta acción no se puede deshacer.</item>
+        <item quantity="many">También se eliminarán sus %d casos. Esta acción no se puede deshacer.</item>
+        <item quantity="other">También se eliminarán sus %d casos. Esta acción no se puede deshacer.</item>
+    </plurals>
+</resources>

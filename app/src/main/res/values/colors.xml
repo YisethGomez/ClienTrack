@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Paleta de ClienTrack. Estilo minimalista: tinta oscura, grises neutros y un solo acento.
+     Todos los pares texto/fondo cumplen contraste WCAG AA (4.5:1 o más). -->
+<resources>
+    <!-- Acento único -->
+    <color name="primary">#1E3A8A</color>
+    <color name="primary_container">#EEF2FF</color>
+
+    <!-- Tinta (texto) -->
+    <color name="ink">#111111</color>
+    <color name="ink_label">#374151</color>
+    <color name="ink_secondary">#6B7280</color>
+    <!-- Solo para íconos decorativos (no para texto: no cumple 4.5:1) -->
+    <color name="ink_decor">#9CA3AF</color>
+
+    <!-- Superficies y líneas -->
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_muted">#F3F4F6</color>
+    <color name="line">#E5E7EB</color>
+    <color name="outline">#D1D5DB</color>
+    <!-- Borde de los campos de texto: 3.18:1 sobre blanco (WCAG 1.4.11 pide 3:1 para controles) -->
+    <color name="outline_input">#8A919C</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Error y vencido -->
+    <color name="error">#B42318</color>
+    <color name="error_container">#FEF3F2</color>
+
+    <!-- Estados del caso: texto (fuerte) y fondo (tonal) -->
+    <color name="estado_abierto">#1E3A8A</color>
+    <color name="estado_abierto_bg">#EEF2FF</color>
+    <color name="estado_proceso">#5B21B6</color>
+    <color name="estado_proceso_bg">#F3EEFF</color>
+    <color name="estado_cerrado">#475467</color>
+    <color name="estado_cerrado_bg">#F2F4F7</color>
+
+    <!-- Prioridad (punto de color, siempre acompañado del texto) -->
+    <color name="prioridad_alta">#B42318</color>
+    <color name="prioridad_media">#B54708</color>
+    <color name="prioridad_baja">#027A48</color>
+
+    <!-- Ícono de la app -->
+    <color name="ic_launcher_background">#1E3A8A</color>
+</resources>

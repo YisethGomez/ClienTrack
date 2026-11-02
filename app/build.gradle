@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'co.edu.ean.clientrack'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "co.edu.ean.clientrack"
+        minSdk 26
+        targetSdk 34
+        versionCode 2
+        versionName "2.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    testOptions {
+        // Desactiva las animaciones del sistema durante las pruebas de interfaz (evita fallas intermitentes)
+        animationsDisabled true
+    }
+
+    lint {
+        // El reporte queda en app/build/reports/lint-results-debug.html
+        abortOnError true
+        checkReleaseBuilds false
+        htmlReport true
+        // Avisos de estilo que no son errores en un proyecto académico
+        disable 'GradleDependency', 'NewerVersionAvailable', 'AndroidGradlePluginVersion', 'MonochromeLauncherIcon'
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+
+    // Pruebas unitarias (lógica pura, se ejecutan en el computador)
+    testImplementation 'junit:junit:4.13.2'
+
+    // Pruebas de interfaz (se ejecutan en el emulador o en un celular)
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tema base de la aplicación (Material 3, sin ActionBar: cada pantalla tiene su propia barra). -->
+    <style name="Base.Theme.ClienTrack" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Acento -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/primary</item>
+        <item name="colorPrimaryInverse">#A5B4FC</item>
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/primary_container</item>
+        <item name="colorOnSecondaryContainer">@color/primary</item>
+        <item name="colorTertiary">@color/primary</item>
+        <item name="colorOnTertiary">@color/white</item>
+        <item name="colorTertiaryContainer">@color/primary_container</item>
+        <item name="colorOnTertiaryContainer">@color/primary</item>
+
+        <!-- Superficies neutras: se eliminan los tintes lavanda que trae Material 3 por defecto -->
+        <item name="android:colorBackground">@color/surface</item>
+        <item name="colorOnBackground">@color/ink</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/ink</item>
+        <item name="colorSurfaceVariant">@color/surface_muted</item>
+        <item name="colorOnSurfaceVariant">@color/ink_secondary</item>
+        <item name="colorSurfaceBright">@color/surface</item>
+        <item name="colorSurfaceDim">@color/surface_muted</item>
+        <item name="colorSurfaceContainerLowest">@color/surface</item>
+        <item name="colorSurfaceContainerLow">@color/surface</item>
+        <item name="colorSurfaceContainer">@color/surface</item>
+        <item name="colorSurfaceContainerHigh">@color/surface</item>
+        <item name="colorSurfaceContainerHighest">@color/surface_muted</item>
+        <item name="colorSurfaceInverse">@color/ink</item>
+        <item name="colorOnSurfaceInverse">@color/white</item>
+        <item name="colorOutline">@color/outline</item>
+        <item name="colorOutlineVariant">@color/line</item>
+        <item name="elevationOverlayEnabled">false</item>
+
+        <!-- Error -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorErrorContainer">@color/error_container</item>
+        <item name="colorOnErrorContainer">@color/error</item>
+
+        <!-- Ventana y barra de estado claras -->
+        <item name="android:windowBackground">@color/surface</item>
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Tipografía: Inter en todos los componentes de Material -->
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.ClienTrack.DisplayLarge</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.ClienTrack.DisplayMedium</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.ClienTrack.DisplaySmall</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.ClienTrack.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.ClienTrack.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.ClienTrack.HeadlineSmall</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.ClienTrack.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.ClienTrack.TitleMedium</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.ClienTrack.TitleSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.ClienTrack.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.ClienTrack.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.ClienTrack.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.ClienTrack.LabelLarge</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.ClienTrack.LabelMedium</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.ClienTrack.LabelSmall</item>
+
+        <!-- Componentes -->
+        <item name="materialButtonStyle">@style/Widget.ClienTrack.Button</item>
+        <item name="textInputStyle">@style/Widget.ClienTrack.Input</item>
+        <item name="toolbarStyle">@style/Widget.ClienTrack.Toolbar</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.ClienTrack.Dialog</item>
+
+        <!-- Formas -->
+        <item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.ClienTrack.Small</item>
+        <item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.ClienTrack.Medium</item>
+    </style>
+
+    <style name="Theme.ClienTrack" parent="Base.Theme.ClienTrack" />
+
+    <!-- Diálogos de confirmación -->
+    <style name="ThemeOverlay.ClienTrack.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.ClienTrack.Title</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/MaterialAlertDialog.ClienTrack.Body</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.ClienTrack.DialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.ClienTrack.DialogButton</item>
+    </style>
+
+    <style name="MaterialAlertDialog.ClienTrack.Title" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+    <style name="MaterialAlertDialog.ClienTrack.Body" parent="MaterialAlertDialog.Material3.Body.Text">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/ink_secondary</item>
+    </style>
+
+    <style name="Widget.ClienTrack.DialogButton" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- Bordes redondeados -->
+    <style name="ShapeAppearance.ClienTrack.Small" parent="ShapeAppearance.Material3.Corner.Small">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.ClienTrack.Medium" parent="ShapeAppearance.Material3.Corner.Medium">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.ClienTrack.Pill" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

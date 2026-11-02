@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vista 3: Mis casos. Saludo, resumen por estado, búsqueda, filtros y lista. -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/raiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Encabezado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="24dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvSaludo"
+                    style="@style/Text.ClienTrack.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/Text.ClienTrack.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:accessibilityHeading="true"
+                    android:text="@string/main_title"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnClientes"
+                style="@style/Widget.ClienTrack.IconButton"
+                android:contentDescription="@string/menu_clients"
+                android:src="@drawable/ic_users" />
+
+            <ImageButton
+                android:id="@+id/btnCerrarSesion"
+                style="@style/Widget.ClienTrack.IconButton"
+                android:contentDescription="@string/menu_logout"
+                android:src="@drawable/ic_logout" />
+        </LinearLayout>
+
+        <!-- Resumen por estado -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.ClienTrack.OutlinedCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="14dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="14dp">
+
+                    <TextView
+                        android:id="@+id/tvAbiertos"
+                        style="@style/Text.ClienTrack.StatNumber" />
+
+                    <TextView
+                        style="@style/Text.ClienTrack.StatLabel"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/stat_open" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="14dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="14dp">
+
+                    <TextView
+                        android:id="@+id/tvEnProceso"
+                        style="@style/Text.ClienTrack.StatNumber" />
+
+                    <TextView
+                        style="@style/Text.ClienTrack.StatLabel"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/stat_progress" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="14dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="14dp">
+
+                    <TextView
+                        android:id="@+id/tvCerrados"
+                        style="@style/Text.ClienTrack.StatNumber" />
+
+                    <TextView
+                        style="@style/Text.ClienTrack.StatLabel"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/stat_closed" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="14dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="14dp">
+
+                    <TextView
+                        android:id="@+id/tvVencidos"
+                        style="@style/Text.ClienTrack.StatNumber"
+                        android:textColor="@color/error" />
+
+                    <TextView
+                        style="@style/Text.ClienTrack.StatLabel"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/stat_overdue" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Búsqueda -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_search">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etBuscar"
+                style="@style/Widget.ClienTrack.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_search"
+                android:imeOptions="actionSearch"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Filtros por estado -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:clipToPadding="false"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:scrollbars="none">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:checkedChip="@+id/chipTodos"
+                app:chipSpacingHorizontal="8dp"
+                app:selectionRequired="true"
+                app:singleLine="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipTodos"
+                    style="@style/Widget.ClienTrack.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter_all" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipAbiertos"
+                    style="@style/Widget.ClienTrack.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter_open" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipEnProceso"
+                    style="@style/Widget.ClienTrack.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter_progress" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCerrados"
+                    style="@style/Widget.ClienTrack.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter_closed" />
+            </com.google.android.material.chip.ChipGroup>
+        </HorizontalScrollView>
+
+        <!-- Lista de casos -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCasos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="96dp" />
+
+            <include
+                android:id="@+id/layoutVacio"
+                layout="@layout/view_empty_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabNuevoCaso"
+        style="@style/Widget.ClienTrack.Fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:text="@string/new_case"
+        app:icon="@drawable/ic_add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

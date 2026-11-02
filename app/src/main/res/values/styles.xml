@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Estilos reutilizables (equivalen a clases CSS).
+     Tipografía: Inter en tres pesos. 400 = cuerpo, 500 = énfasis, 600 = títulos. -->
+<resources>
+
+    <!-- ===================== Textos de pantalla ===================== -->
+
+    <style name="Text.ClienTrack" parent="">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:includeFontPadding">true</item>
+    </style>
+
+    <!-- Título principal de la bienvenida -->
+    <style name="Text.ClienTrack.Display">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:letterSpacing">-0.025</item>
+        <item name="android:lineSpacingMultiplier">1.08</item>
+    </style>
+
+    <!-- Título de pantalla (Mis casos, Iniciar sesión, Crear cuenta) -->
+    <style name="Text.ClienTrack.Headline">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+
+    <!-- Asunto en el detalle del caso -->
+    <style name="Text.ClienTrack.DetailTitle">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+
+    <!-- Títulos de hojas y secciones -->
+    <style name="Text.ClienTrack.Title">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <!-- Nombre de la marca junto al logotipo -->
+    <style name="Text.ClienTrack.Brand">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <!-- Título de una fila de lista -->
+    <style name="Text.ClienTrack.RowTitle">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+    </style>
+
+    <style name="Text.ClienTrack.Body">
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style>
+
+    <style name="Text.ClienTrack.Body.Secondary">
+        <item name="android:textColor">@color/ink_secondary</item>
+    </style>
+
+    <style name="Text.ClienTrack.Lead">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ink_secondary</item>
+        <item name="android:lineSpacingMultiplier">1.45</item>
+    </style>
+
+    <style name="Text.ClienTrack.Secondary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ink_secondary</item>
+    </style>
+
+    <!-- Etiqueta encima de un campo de formulario -->
+    <style name="Text.ClienTrack.FieldLabel">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/ink_label</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <!-- Encabezado de sección en mayúsculas (CLIENTE) -->
+    <style name="Text.ClienTrack.Overline">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ink_secondary</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Datos pequeños: fechas en las filas, contadores -->
+    <style name="Text.ClienTrack.Meta">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ink_secondary</item>
+    </style>
+
+    <style name="Text.ClienTrack.Caption">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/ink_secondary</item>
+    </style>
+
+    <!-- Número de los contadores de la pantalla principal -->
+    <style name="Text.ClienTrack.StatNumber">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/cero</item>
+    </style>
+
+    <style name="Text.ClienTrack.StatLabel">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ink_secondary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Fila etiqueta / valor (detalle del caso) -->
+    <style name="Text.ClienTrack.RowLabel">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ink_secondary</item>
+    </style>
+
+    <style name="Text.ClienTrack.RowValue">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">end</item>
+    </style>
+
+    <!-- Enlace de texto al pie de login / registro (área táctil de 48dp) -->
+    <style name="Text.ClienTrack.FooterLink">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ink_secondary</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+    </style>
+
+    <!-- Número de paso en la bienvenida (01, 02...) -->
+    <style name="Text.ClienTrack.StepNumber">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/ink_secondary</item>
+        <item name="android:layout_width">28dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
+
+    <style name="Text.ClienTrack.StepText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingMultiplier">1.35</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Etiqueta tonal: fondo claro y texto oscuro del mismo color (estado, vencido) -->
+    <style name="Text.ClienTrack.Badge">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_badge</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- Texto de los elementos del menú desplegable de clientes -->
+    <style name="Text.ClienTrack.DropdownItem">
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- ===================== Componentes ===================== -->
+
+    <!-- Botón principal (relleno, acento) -->
+    <style name="Widget.ClienTrack.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="iconTint">@color/white</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">8dp</item>
+        <item name="iconSize">18dp</item>
+    </style>
+
+    <!-- Acción destructiva secundaria (texto rojo, sin fondo) -->
+    <style name="Widget.ClienTrack.Button.Danger" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/error</item>
+        <item name="rippleColor">@color/error_container</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Opción de un grupo segmentado (Prioridad y Estado) -->
+    <style name="Widget.ClienTrack.Segment" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="backgroundTint">@color/segment_background</item>
+        <item name="android:textColor">@color/segment_text</item>
+        <item name="strokeColor">@color/outline</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- Botón de acción flotante con texto (Nuevo caso, Nuevo cliente) -->
+    <style name="Widget.ClienTrack.Fab" parent="Widget.Material3.ExtendedFloatingActionButton.Icon.Primary">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="iconTint">@color/white</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.ClienTrack.Pill</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Botón de solo ícono (48dp de área táctil) -->
+    <style name="Widget.ClienTrack.IconButton" parent="">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:scaleType">center</item>
+        <item name="tint">@color/ink</item>
+    </style>
+
+    <!-- Campo de texto con borde. La etiqueta va encima (TextView aparte), por eso hintEnabled=false -->
+    <style name="Widget.ClienTrack.Input" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="hintEnabled">false</item>
+        <item name="boxStrokeColor">@color/input_stroke</item>
+        <item name="boxStrokeErrorColor">@color/error</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1.5dp</item>
+        <item name="boxBackgroundColor">@color/surface</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="errorTextAppearance">@style/TextAppearance.ClienTrack.Error</item>
+        <item name="startIconTint">@color/ink_secondary</item>
+        <item name="endIconTint">@color/ink_secondary</item>
+    </style>
+
+    <!-- Campo desplegable (selector de cliente) -->
+    <style name="Widget.ClienTrack.Input.Dropdown" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="hintEnabled">false</item>
+        <item name="boxStrokeColor">@color/input_stroke</item>
+        <item name="boxStrokeErrorColor">@color/error</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1.5dp</item>
+        <item name="boxBackgroundColor">@color/surface</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="errorTextAppearance">@style/TextAppearance.ClienTrack.Error</item>
+        <item name="endIconTint">@color/ink_secondary</item>
+    </style>
+
+    <!-- Texto que se escribe dentro de los campos -->
+    <style name="Widget.ClienTrack.EditText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textColorHint">@color/ink_secondary</item>
+    </style>
+
+    <style name="Widget.ClienTrack.DropdownText" parent="Widget.Material3.AutoCompleteTextView.OutlinedBox">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textColorHint">@color/ink_secondary</item>
+    </style>
+
+    <!-- Filtros por estado -->
+    <style name="Widget.ClienTrack.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_background</item>
+        <item name="android:textColor">@color/chip_text</item>
+        <item name="chipStrokeColor">@color/chip_stroke</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipIconVisible">false</item>
+        <item name="chipCornerRadius">17dp</item>
+        <item name="chipMinHeight">34dp</item>
+        <item name="textStartPadding">6dp</item>
+        <item name="textEndPadding">6dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.ClienTrack.Chip</item>
+    </style>
+
+    <!-- Barra superior -->
+    <style name="Widget.ClienTrack.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/surface</item>
+        <item name="titleTextAppearance">@style/TextAppearance.ClienTrack.ToolbarTitle</item>
+        <item name="navigationIconTint">@color/ink</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+
+    <!-- Tarjeta con borde (contadores de la pantalla principal) -->
+    <style name="Widget.ClienTrack.OutlinedCard" parent="Widget.Material3.CardView.Outlined">
+        <item name="strokeColor">@color/line</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardCornerRadius">14dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+    </style>
+
+    <!-- Línea divisoria de 1dp -->
+    <style name="Widget.ClienTrack.Divider" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/line</item>
+    </style>
+
+    <!-- ===================== Apariencias de texto (para componentes de Material) ===================== -->
+
+    <style name="TextAppearance.ClienTrack.ToolbarTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="TextAppearance.ClienTrack.Chip" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.ClienTrack.Error" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="TextAppearance.ClienTrack.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+    <style name="TextAppearance.ClienTrack.DisplayMedium" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+    <style name="TextAppearance.ClienTrack.DisplaySmall" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+    <style name="TextAppearance.ClienTrack.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+    <style name="TextAppearance.ClienTrack.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+    <style name="TextAppearance.ClienTrack.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+    <style name="TextAppearance.ClienTrack.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+    <style name="TextAppearance.ClienTrack.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+    </style>
+    <style name="TextAppearance.ClienTrack.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+    </style>
+    <style name="TextAppearance.ClienTrack.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+    <style name="TextAppearance.ClienTrack.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+    <style name="TextAppearance.ClienTrack.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+    <style name="TextAppearance.ClienTrack.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+    <style name="TextAppearance.ClienTrack.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+    </style>
+    <style name="TextAppearance.ClienTrack.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="fontFamily">@font/inter_medium</item>
+    </style>
+
+</resources>
