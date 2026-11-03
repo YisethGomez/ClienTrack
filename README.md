@@ -12,6 +12,10 @@ Adentro puede registrar clientes y crearles casos con asunto, prioridad, estado 
 
 Los formularios validan los datos antes de guardar, las contraseñas se almacenan cifradas con SHA-256 y cada usuario solo ve su propia información.
 
+## Video de demostración
+
+En este video muestro el funcionamiento de la app y explico el código: https://youtu.be/eJ3cMbVXYho
+
 ## Capturas
 
 | Bienvenida | Registro | Mis casos |
