@@ -50,6 +50,16 @@ Todas son versiones estables.
 
 Para probarla por primera vez: crear una cuenta, iniciar sesión, agregar un cliente desde el ícono de personas de la barra superior y luego crear un caso con el botón +.
 
+## Arquitectura
+
+Usé el patrón MVC (Modelo, Vista, Controlador), que es el que vimos en clase y el que mejor se acomoda a un proyecto con Activities y SQLite:
+
+- Modelo: las clases Usuario, Cliente y Caso, y la clase DatabaseHelper, que es la única que habla con la base de datos.
+- Vista: los archivos XML de res/layout, que solo definen cómo se ve cada pantalla.
+- Controlador: las Activities. Reciben lo que hace el usuario, validan los datos, le piden al modelo que guarde o consulte y actualizan la pantalla.
+
+Así ninguna pantalla escribe SQL directamente y si cambia la base de datos solo hay que tocar DatabaseHelper.
+
 ## Organización del código
 
 El código está dividido por responsabilidades dentro de `app/src/main/java/co/edu/ean/clientrack`:
