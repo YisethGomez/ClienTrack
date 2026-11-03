@@ -78,7 +78,7 @@ La base de datos se llama clientrack.db y se crea en el dispositivo la primera v
 
 <img src="capturas/modelo_datos.png" alt="Modelo de datos" width="650">
 
-El detalle de las tablas, sus relaciones y la lógica de la aplicación está en el archivo DOCUMENTACION_TECNICA.pdf.
+El detalle de las tablas, sus relaciones y la lógica de la aplicación está en el archivo DOCUMENTACION_TECNICA.pdf. Un resumen de dos páginas con la arquitectura, el esquema de datos y las validaciones está en DOCUMENTO_TECNICO_BREVE.pdf.
 
 ## Pruebas
 
